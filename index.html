@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="black">
+    <h1 style="color: aqua;background-color: black;">applications.properties</h1>
+    <pre style="color: white;">
+        spring.application.name=student_boot
+        #server.port=8081
+        #db----configuration-----
+
+        spring.datasource.url= jdbc:mysql://localhost:3306/student_boot?createDatabaseIfNotExist=true
+        spring.datasource.username=root
+        spring.datasource.password=root
+
+        spring.jpa.hibernate.ddl-auto=update
+        spring.jpa.properties.hibernate.format_sql=true
+        spring.jpa.show-sql=true
+
+        spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL8Dialect
+
+        spring.mvc.pathmatch.matching-strategy=ant-path-matcher
+    </pre>
+</body>
+</html>
